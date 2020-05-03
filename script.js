@@ -1,4 +1,6 @@
-$(document).ready(function(){
+let currentDay = moment().format('MMMM Do YYYY, h:mm:ss a');
+
+$("#currentDay").text(currentDay);
 
 
 
@@ -6,28 +8,4 @@ $(document).ready(function(){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
 
