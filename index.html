@@ -17,6 +17,8 @@
     <header class="jumbotron">
         <h1 class="display-3">Work Day Scheduler</h1>
         <p class="lead">A simple calendar app for scheduling your work day</p>
+
+        <!-- Displays current day and time -->
         <p id="currentDay" class="lead"></p>
     </header>
 
@@ -24,6 +26,7 @@
         <div class="row">
             <div class="col-xs-12 col-sm-7 custom-panel">
 
+                <!-- Rows for hours and corresponding message with save, clear, and complete buttons -->
                 <div id="slot1" class="row justify-content-md-center border-top border-bottom slot">
                     <div class="col-md-1 time">8 AM</div>
                     <textarea rows="3" class="col-md-8 message" data-time="8"></textarea>
@@ -111,16 +114,19 @@
                     <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
                 </div>
             </div>
+            <!-- Empty col for spacing -->
             <div class="col"></div>
             <div class="col-xs-12 col-sm-3">
+                <!-- Section for completed items -->
                 <div class="card">
                     <div class="card-body text-center">
                         <h4 class="card-title">Completed</h4>
                         <hr>
-                        <p>Completed Tasks go here</p>
+                        <!-- Empty div that will append completed items to it -->
+                        <div class="completed-items"></div>
                     </div>
                 </div>
-
+                <!-- Section for user's notes -->
                 <div class="card">
                     <div class="card-body text-center">
                         <h4 class="card-title">Notes</h4>
@@ -129,6 +135,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Empty col for spacing -->
             <div class="col"></div>
         </div>
     </div>
