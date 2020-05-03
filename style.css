@@ -4,7 +4,7 @@ body {
     line-height: 1;
   }
   
-  textarea {
+  .message {
     background: transparent;
     border: none;
     resize: none;
@@ -58,7 +58,7 @@ body {
     color: white;
   }
   
-  #saveBtn, #clearBtn, #completeBtn {
+  .saveBtn, .clearBtn, .checkBtn {
     background-color: #06AED5;
     color: white;
   }
