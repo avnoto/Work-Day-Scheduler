@@ -60,14 +60,23 @@ function retrieveText() {
 
         // sets the text in the message element
         $(element).text(message);
-
-
     });
+
+        //get text ID to retrieve data from local storage    
+        const textID = $(".notes").attr("data-input");
+
+        //get message from notes tag
+        const notes = localStorage.getItem(textID);
+
+        //sets the text in notes element
+        $(".notes").text(notes);
+    
 
 }
 
 //ALL ON CLICK FUNCTIONS FOR BUTTONS BELOW THIS LINE
 
+//on click function for save button
 $(".saveBtn").on("click", function () {
 
     //get time id from message tag
@@ -82,6 +91,7 @@ $(".saveBtn").on("click", function () {
     
 });
 
+//on click function for clear button
 $(".clearBtn").on("click", function () {
 
     //get time id from message tag
@@ -96,15 +106,28 @@ $(".clearBtn").on("click", function () {
     
 });
 
-$(".checkBtn").on("click", function () {
-    const timeID = $(this).siblings(".message").attr("data-time");
-    const userInput = $(this).siblings(".message").val("");
+// $(".checkBtn").on("click", function () {
+//     const timeID = $(this).siblings(".message").attr("data-time");
+//     const userInput = $(this).siblings(".message").val("");
     
-    localStorage.setItem(timeID, userInput);
-    
-    
-});
+//     localStorage.setItem(timeID, userInput);
+      
+// });
 
+
+//on click function for when user clicks on body after typing notes in Notes box 
+$("body").on("click", function () {
+    
+    //get text ID from notes tag
+    const textID = $(".notes").attr("data-input");
+
+    //get text of user's input
+    const userNotes = $(".notes").val();
+    
+    //sets in local storage
+    localStorage.setItem(textID, userNotes);
+
+});
 
 
 });
