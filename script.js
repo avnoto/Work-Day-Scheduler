@@ -70,6 +70,12 @@ function retrieveText() {
 
         //sets the text in notes element
         $(".notes").text(notes);
+
+        const checkedID = $(".completed-items").attr("data-text");
+
+        const userText = localStorage.getItem(checkedID);
+
+        $(".completed-items").text(userText);
     
 
 }
@@ -106,13 +112,22 @@ $(".clearBtn").on("click", function () {
     
 });
 
-// $(".checkBtn").on("click", function () {
-//     const timeID = $(this).siblings(".message").attr("data-time");
-//     const userInput = $(this).siblings(".message").val("");
+//on click function or completed button
+$(".checkBtn").on("click", function () {
+
+    // get text id from completed tag
+    const checkedID = $(this).siblings(".message").attr("data-text");
+
+    //get text of user's input
+    const userText = $(this).siblings(".message").val();
+
+    //append text to completed section 
+    $(".completed-items").append(userText);
+
+    localStorage.setItem(checkedID, userText);
     
-//     localStorage.setItem(timeID, userInput);
       
-// });
+});
 
 
 //on click function for when user clicks on body after typing notes in Notes box 
