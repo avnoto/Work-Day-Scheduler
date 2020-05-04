@@ -6,47 +6,38 @@ body {
     color: #0B274A;
   }
   
-  .message {
+.message {
     background: transparent;
     border: none;
     resize: none;
     border-left: 2px dashed #0B274A;
     border-bottom: 2px solid white;
-    border-radius: 3px;
+    border-radius: 5px;
 
   }
   
-  .jumbotron {
+.jumbotron {
     background-color: transparent;
     border-radius: 0;
 
   }
-  
-  .description{
-    white-space: pre-wrap;
-  }
-  
-  .time-block {
-    text-align: center;
-    border-radius: 15px;
-  }
-  
-  .past {
+
+.past {
     background-color: #CACACA;
     color: #0B274A;
   }
   
-  .present {
+.present {
     background-color: #F79286;
     color: #0B274A;
   }
   
-  .future {
+.future {
     background-color: #A8DCD8;
     color: #0B274A;
   }
   
-  .saveBtn, .clearBtn {
+.saveBtn, .clearBtn {
     background-color: #0B274A;
     color: white;
     font-size: 25px;
@@ -54,7 +45,7 @@ body {
     
   }
 
-  #text-notes {
+#text-notes {
     border: none;
   }
 
@@ -71,7 +62,7 @@ body {
 }
 
 header {
-  padding: 30px;
+  padding: 25px;
 }
 
 
