@@ -50,8 +50,9 @@ body {
   .saveBtn, .clearBtn {
     background-color: #0B274A;
     color: white;
-    font-size: 30px;
+    font-size: 25px;
     border-radius: 8px;
+    
   }
 
   #text-notes {
@@ -74,11 +75,6 @@ header {
   padding: 30px;
 }
 
-/* .display-3, #subheader {
-   margin-left: 130px;
-   margin-top: 5px;
-
-} */
 
 h2, #today, .card-title {
   font-family: 'Special Elite', cursive;
@@ -91,9 +87,10 @@ h2, #today, .card-title {
 }
 
 .date {
-  margin-top: 60px;
+  margin-top: 80px;
   
 }
+
 
 
 
