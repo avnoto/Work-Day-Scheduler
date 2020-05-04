@@ -10,133 +10,123 @@
         integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Chelsea+Market&family=Covered+By+Your+Grace&family=Indie+Flower&family=Poppins:wght@400;500;600&family=Rock+Salt&family=Special+Elite&display=swap"
+        rel="stylesheet">
     <title>Work Day Scheduler</title>
 </head>
 
 <body>
-    <header class="jumbotron">
-        <h1 class="display-3">Work Day Scheduler</h1>
-        <p class="lead">A simple calendar app for scheduling your work day</p>
+    <header class="container-fluid">
+        <div class="row">
+            <div class="col-lg-9 mt-4">
+                <h2 class="display-3 ml-5">daily planner</h2>
+                <p class="lead ml-5" id="subheader">a simple calendar app for scheduling your day <i
+                        class="fa fa-heart"></i></small></p>
+            </div>
+            <div class="col-lg-3 date">
+                <h3 class="display-5" id="today">today's date</h3>
 
-        <!-- Displays current day and time -->
-        <p id="currentDay" class="lead"></p>
+                <p id="currentDay" class="lead"></p>
+            </div>
+        </div>
     </header>
 
     <div class="container-fluid">
-        <div class="row">
-            <div class="col-xs-12 col-sm-7 custom-panel">
+        <div class="row ml-5">
+            <div class="col-xs-12 col-lg-6 custom-panel">
 
                 <!-- Rows for hours and corresponding message with save, clear, and complete buttons -->
-                <div id="slot1" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">8 AM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="8"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 saveBtn"><i class="fas fa-check"></i></button>
+                <div id="slot1" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">8 am</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="8"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot2" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">9 AM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="9"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot2" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">9 am</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="9"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot3" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">10 AM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="10"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot3" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">10 am</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="10"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot4" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">11 AM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="11"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot4" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">11 am</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="11"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot5" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">12 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="12"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot5" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">12 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="12"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot6" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">1 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="13"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot6" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">1 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="13"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot7" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">2 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="14"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot7" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">2 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="14"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot8" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">3 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="15"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot8" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">3 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="15"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot9" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">4 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="16"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot9" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">4 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="16"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
 
-                <div id="slot10" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">5 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="17"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot10" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">5 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="17"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
-                <div id="slot11" class="row justify-content-md-center border-top border-bottom slot">
-                    <div class="col-md-1 time">6 PM</div>
-                    <textarea rows="3" class="col-md-8 message" data-time="18"></textarea>
-                    <button class="col-md-1 saveBtn"><i class="far fa-save"></i></button>
-                    <button class="col-md-1 clearBtn"><i class="fas fa-trash"></i></button>
-                    <button class="col-md-1 checkBtn"><i class="fas fa-check"></i></button>
+                <div id="slot11" class="row justify-content-lg-center slot">
+                    <div class="col-lg-1 hour">6 pm</div>
+                    <textarea rows="4" class="col-lg-9 message" data-time="18"></textarea>
+                    <button class="col-lg-1 saveBtn"><i class="far fa-save"></i></button>
+                    <button class="col-lg-1 clearBtn"><i class="fas fa-trash"></i></button>
                 </div>
             </div>
             <!-- Empty col for spacing -->
             <div class="col"></div>
-            <div class="col-xs-12 col-sm-3">
-                <!-- Section for completed items -->
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Completed</h4>
-                        <hr>
-                        <!-- Empty div that will append completed items to it -->
-                        <div class="completed-items" data-text="checked"></div>
-                    </div>
-                </div>
-                <!-- Section for user's notes -->
-                <div class="card">
-                    <div class="card-body text-center">
-                        <h4 class="card-title">Notes</h4>
-                        <hr>
-                        <textarea rows="8" id="text-notes" class="col-md-10 notes" data-input="notes"></textarea>
+            <!-- Section for user's notes -->
+            <div class="col-xs-12 col-lg-5">
+                <div class="row mr-2 ml-0">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">notes</h3>
+                            <hr class="note-hr">
+                            <textarea rows="25" id="text-notes" class="col-lg-12 notes" data-input="notes"></textarea>
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Empty col for spacing -->
-            <div class="col"></div>
         </div>
     </div>
 
