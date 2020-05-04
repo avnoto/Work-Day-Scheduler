@@ -119,10 +119,11 @@ $(".checkBtn").on("click", function () {
     const checkedID = $(this).siblings(".message").attr("data-text");
 
     //get text of user's input
-    const userText = $(this).siblings(".message").val();
+    const userText = $(this).siblings(".message").val("");
 
     //append text to completed section 
     $(".completed-items").append(userText);
+
 
     localStorage.setItem(checkedID, userText);
     
