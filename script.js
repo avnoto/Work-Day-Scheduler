@@ -13,7 +13,7 @@ function doInit() {
 }
 //displays current day in jumbotron
 function currentDay() {
-    let currentDay = moment().format('MMMM Do YYYY, h:mm a');
+    let currentDay = moment().format('MMMM Do YYYY, h:mm a').toLowerCase();
     $("#currentDay").text(currentDay);
     };
 
