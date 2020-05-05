@@ -103,3 +103,7 @@ h2, #today, .card-title {
 #currentDay {
   font-weight: 600;
 }
+
+.display-3, #subheader {
+  margin-left: 65px;
+}
