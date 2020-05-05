@@ -19,7 +19,7 @@ The site is published at https://avnoto.github.io/Work-Day-Scheduler/
 <img src="images/dailyplanner.png" alt="Screenshot of Planner">
 
 
-This is a daily work scheduler that can save and clear the user's appointements. In addition, the user can save notes in a separate section. The application updates the current day and time.
+This is a daily work scheduler that can save and clear the user's appointments. In addition, the user can save notes in a separate section. The application updates the current day and time.
 
 The schedule outlines a typical work day, with an extra hour before the work day starts, and an extra hour after (8am - 6pm) to adhere to more users' schedules. 
 
