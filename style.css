@@ -78,7 +78,7 @@ h2, #today, .card-title {
 }
 
 .date {
-  margin-top: 80px;
+  margin-top: 90px;
   
 }
 
@@ -90,4 +90,16 @@ h2, #today, .card-title {
 .footer {
   color: #0B274A;
   font-family: 'Poppins', sans-serif;
+}
+
+.fa-clock, .fa-calendar-day, .fa-sticky-note {
+  font-size: 25px;
+}
+
+.fa-calendar-day, .fa-sticky-note {
+  padding-left: 4px;
+}
+
+#currentDay {
+  font-weight: 600;
 }
