@@ -15,7 +15,7 @@ The site is published at https://avnoto.github.io/Work-Day-Scheduler/
 
 ## Usage
 
-![Screenshot of Planner](images\dailyplanner.png)
+<img src="images/dailyplanner.png" alt="Screenshot of Planner">
 
 This is a daily work scheduler that can save and clear the user's appointements. In addition, the user can save notes in a separate section. The application updates the current day and time.
 
