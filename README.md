@@ -1,6 +1,6 @@
 # Work Day Scheduler
 
-A simple calendar app for scheduling your work day. 
+A simple calendar app for scheduling your work day, created with HTML, CSS, Bootstrap, jQuery and Moment.js.
 
 ## Table of Contents
 
