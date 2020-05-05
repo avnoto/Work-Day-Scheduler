@@ -23,9 +23,11 @@ This is a daily work scheduler that can save and clear the user's appointments. 
 
 The schedule outlines a typical work day, with an extra hour before the work day starts, and an extra hour after (8am - 6pm) to adhere to more users' schedules. 
 
-To save an item in a specific time slot, simply click the "Save" icon. 
+To save an item in a specific time slot, simply click the "Save" icon.
+<br>
 To clear an item in a specific time slot, simply click the "Clear" icon.
-To save a note, click anywhere outside the note text area. 
+<br>
+To save a note, click anywhere outside the note text area. The note section can be expanded if need be.
 
 Hours that have passed turn gray. The present hour is pink, and future hours are light blue.
 
