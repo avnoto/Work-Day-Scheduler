@@ -27,7 +27,7 @@ To save an item in a specific time slot, simply click the "Save" icon.
 <br>
 To clear an item in a specific time slot, simply click the "Clear" icon.
 <br>
-To save a note, click anywhere outside the note text area. The note section can be expanded if need be.
+To save a note, click anywhere outside the note text area. The note section can be expanded if need be. To clear a note, remove the content inside the text area, then click outside anywhere outside the text area. This works just like the Windows application "Sticky Notes." 
 
 Hours that have passed turn gray. The present hour is pink, and future hours are light blue.
 
