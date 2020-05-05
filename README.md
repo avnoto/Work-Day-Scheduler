@@ -19,15 +19,17 @@ The site is published at https://avnoto.github.io/Work-Day-Scheduler/
 <img src="images/dailyplanner.png" alt="Screenshot of Planner">
 
 
-This is a daily work scheduler that can save and clear the user's appointements. In addition, the user can save notes in a separate section. The application updates the current day and time.
+This is a daily work scheduler that can save and clear the user's appointments. In addition, the user can save notes in a separate section. The application updates the current day and time.
 
 The schedule outlines a typical work day, with an extra hour before the work day starts, and an extra hour after (8am - 6pm) to adhere to more users' schedules. 
 
-To save an item in a specific time slot, simply click the "Save" icon. 
+To save an item in a specific time slot, simply click the "Save" icon.
+<br>
 To clear an item in a specific time slot, simply click the "Clear" icon.
-To save a note, click anywhere outside the note text area. 
+<br>
+To save a note, click anywhere outside the note text area. The note section can be expanded if need be. To clear a note, remove the content inside the text area, then click outside anywhere outside the text area. This works just like the Windows application "Sticky Notes." 
 
-Hours that have passed turn gray. The present hour is pink, and future hours are light blue.
+Hour blocks are color coated. Hour blocks that have passed turn gray. The present hour block is pink, and future hour blocks are light blue.
 
 ## Support
 
