@@ -37,4 +37,4 @@ Please contact me at alexandravnoto@gmail.com with any questions or concerns.
 
 ## Acknowledgements
 
-Justin Singh provided assistance with a video to the solution. I implemented his methods in my script.js. 
+Justin Singh provided assistance for this project.
